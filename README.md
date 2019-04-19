@@ -1,40 +1,17 @@
-# Project Name
+buy_module
+Allows the user to interactively buy and sell shares from various financial stocks.  
 
-> Project description
+Getting service started
+From within the root directory: npm install npm run react-dev npm run db:setup npm start
 
-## Related Projects
+Related projects
+https://github.com/menintights/buyComponent
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-
-## Table of Contents
-
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
-
-## Usage
-
-> Some usage instructions
-
-## Requirements
-
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
-
-## Development
-
-### Installing Dependencies
-
-From within the root directory:
-
-```sh
-npm install -g webpack
-npm install
-```
-
-# stock-chart
+API routes
+Type	Endpoint	Operation
+/stocks/:ticker	Get	Initial Page Load
+/api/stocks/:ticker	Get	Display Company API Data
+/api/accounts/:account_number	Get	Display Account API Data
+/accounts/:account_number	Update	Purchase/Sell stock
+/stocks/:ticker/dev	Create/Update/Delete	Admin changes to listed companies
+/accounts/:account_number/dev	Create/Update/Delete	Admin changes to user account
