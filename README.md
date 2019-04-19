@@ -1,17 +1,18 @@
-buy_module
-Allows the user to interactively buy and sell shares from various financial stocks.  
+# buy_module
+A transactional handling for the purchase of desired stocks. 
 
-Getting service started
+# Getting service started
 From within the root directory: npm install npm run react-dev npm run db:setup npm start
 
 Related projects
 https://github.com/menintights/buyComponent
 
-API routes
-Type	Endpoint	Operation
-/stocks/:ticker	Get	Initial Page Load
-/api/stocks/:ticker	Get	Display Company API Data
-/api/accounts/:account_number	Get	Display Account API Data
-/accounts/:account_number	Update	Purchase/Sell stock
-/stocks/:ticker/dev	Create/Update/Delete	Admin changes to listed companies
-/accounts/:account_number/dev	Create/Update/Delete	Admin changes to user account
+# API routes
+| Route                                              | Result                              |
+|----------------------------------------------------|-------------------------------------|
+| `GET/stocks/:ticker`                               | Initial Page Load                   |
+| `GET/api/stocks/:ticker`                           | Display Company API Data            |
+| `GET/api/accounts/:account_number`                 | Display Account API Data            |
+| `Update/accounts/:account_number`                  | Purchase stock                      |
+| `Create/Update/Delete/stocks/:ticker/dev`          | Admin changes to listed companies   |
+| `Create/Update/Delete/accounts/:account_number/dev`| Admin changes to user account       |
